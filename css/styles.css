@@ -6,3 +6,18 @@
     margin: 0;
     padding: 0;
 }
+
+
+/************
+     Navigation design 
+***************/
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.nav a{
+    color: #3e3e3e;
+    font-weight: bold;
+}
