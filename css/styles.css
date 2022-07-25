@@ -65,9 +65,5 @@ img{
     .carousel-item .row{
         height: 90vh;
      }
-    .carousel-item img{
-        max-width: 70%;
-        margin: 0 auto;
-     }
      
  }
