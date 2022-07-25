@@ -49,7 +49,16 @@ img{
     width: 100px;
 }
 
-
+/* Subscribe */
+.form-control {
+    padding: 10px 25px;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    width: 100%;
+}
 
 /* Responsive css quireies */
 @media (max-width: 575.98px) { 
