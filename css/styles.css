@@ -6,6 +6,16 @@
     margin: 0;
     padding: 0;
 }
+.btn {
+    letter-spacing: 1px;
+    padding: 8px 30px;
+}
+.bg-pink{
+    background:#fceae8;
+}
+.bg-pink-grad{
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+}
 
 
 /************
@@ -19,5 +29,12 @@
 }
 .nav a{
     color: #3e3e3e;
-    font-weight: bold;
+    font-weight: 500;
+}
+
+/************
+     Categories  
+**********/
+.categories img {
+    width: 100px;
 }
