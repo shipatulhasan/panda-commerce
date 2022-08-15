@@ -11,7 +11,7 @@ const closeItem = document.querySelector('.close-me').addEventListener('click',f
 alert.style.display = 'none'
 const buyButton = document.getElementsByClassName('buyProduct')
 const cartUl = document.getElementById('cartItems')
-
+const empthyMessage = document.getElementById('empthy-cart')
 for(const btn of buyButton){
     btn.addEventListener('click',function(event){
         if(alert.style.display==='none'){
@@ -37,16 +37,32 @@ for(const btn of buyButton){
         cartLi.appendChild(cartPrice)
         cartLi.appendChild(closeBtn)
         cartUl.appendChild(cartLi)
+        
+
+        // empthy text
+        if(cartUl.childElementCount <=2){
+            empthyMessage.style.display = 'block'
+        }else{
+            empthyMessage.style.display = 'none'
+        }
+
+        
     })
 }
 // product remove form cart
 function myFunction(event){
-    const closeItem = event.target.parentNode
-    
-    closeItem.remove()
-    // const ul = close.parentNode
-    // console.log(closeItem)
+const closeItem = event.target.parentNode
+// const ul = closeItem.parentNode
+// ul.removeChild(closeItem)
+closeItem.remove()
+console.log(cartUl.childElementCount)
+if(cartUl.childElementCount <=2){
+    empthyMessage.style.display = 'block'
+}else{
+    empthyMessage.style.display = 'none'
 }
+}
+
 
 // cart open
 function cart(){
@@ -58,3 +74,14 @@ function cart(){
 document.getElementById('close').addEventListener('click',function(){
     alert.style.display = 'none'
 })
+
+// test
+const li = document.getElementsByClassName('list')
+    for(element of li){
+        element.addEventListener('click',function(event){
+            const ul = event.target.parentNode
+            ul.removeChild(event.target)
+            
+        })
+    }
+    
