@@ -3,6 +3,7 @@
 
 const alert  = document.getElementById('toast')
 const closeCart = document.getElementById('cart')
+// cart close
 const closeItem = document.querySelector('.close-me').addEventListener('click',function(){
     closeCart.style.display = 'none'
         
@@ -13,9 +14,9 @@ const cartUl = document.getElementById('cartItems')
 
 for(const btn of buyButton){
     btn.addEventListener('click',function(event){
-        if(alert.style.display==='none' || closeCart.style.display === 'none'){
+        if(alert.style.display==='none'){
             alert.style.display = 'block'
-            closeCart.style.display = 'block'
+            
         }
         const btnDiv = event.target.parentNode
         const info = btnDiv.previousElementSibling
@@ -38,6 +39,7 @@ for(const btn of buyButton){
         cartUl.appendChild(cartLi)
     })
 }
+// product remove form cart
 function myFunction(event){
     const closeItem = event.target.parentNode
     
@@ -46,6 +48,13 @@ function myFunction(event){
     // console.log(closeItem)
 }
 
+// cart open
+function cart(){
+    closeCart.style.display = 'block'
+
+}
+
+// toast close
 document.getElementById('close').addEventListener('click',function(){
     alert.style.display = 'none'
 })

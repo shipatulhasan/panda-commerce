@@ -110,6 +110,26 @@ nav{
 i{
     cursor: pointer;
 }
+.cart-icon{
+    width: 45px;
+    padding: 10px;
+    background: white;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 99;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 10px 10px 0 10px;
+    transition: width .3s linear;
+}
+.cart-icon i{
+    font-size: 25px;
+}
+.cart-icon:hover{
+    width: 80px;
+    cursor: pointer;
+
+}
 /* .form-control[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     width: 100%;
 } */
