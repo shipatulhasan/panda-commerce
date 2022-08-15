@@ -24,6 +24,9 @@ img{
 /************
      Navigation design 
 ***************/
+nav{
+    z-index: 10!important;
+}
 .navbar-toggler{
     border: none;
 }
@@ -57,6 +60,55 @@ img{
 }
 .form-control:focus{
     box-shadow: none;
+}
+
+/* toast */
+#toast{
+    z-index: 99;
+}
+#cart::-webkit-scrollbar{
+    display: none;
+}
+.cart{
+    width: 350px;
+    display: none;
+    max-height: 350px;
+    overflow-y: scroll;
+    padding: 10px;
+    background: white;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    z-index: 99;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    
+
+}
+.cart ul{
+    list-style: none;    
+    padding: 10px;
+    margin: 0;
+}
+.cart-item:first-child{
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 5px 0;
+    border-bottom: 1px dashed rgb(163, 163, 163);
+      
+}
+.cross{
+
+        margin-top: -6px;
+        font-size: 10px;
+}
+i{
+    cursor: pointer;
 }
 /* .form-control[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     width: 100%;

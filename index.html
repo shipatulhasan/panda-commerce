@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <nav class="navbar nav mb-5 fixed-top navbar-expand-md ">
+        <nav class="navbar nav mb-5 fixed-top navbar-expand-md z-index-1">
             <div class="container bg-light p-3 ">
                 <a class="navbar-brand img-fluid" href="/"><img src="./images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -200,7 +200,7 @@
 
         <!-- Shoes section start -->
 
-        <section id="shoes" class="shoes container mt-5">
+        <section id="shoes" class="shoes container mt-5 position-relative">
                 <h2 class="headline fw-bold fs-1 pt-md-4 pb-4">
                     Shoes
                 </h2>
@@ -213,7 +213,7 @@
                                 <h1 class="card-title pt-3 fs-4">
                                     Supply 350
                                 </h1>
-                                <h1 class="fs-5">
+                                <h1 class="fs-5 price">
                                     $160
                                 </h1>
                                 <p class="card-text pt-2">Slate helps you see how 
@@ -222,21 +222,21 @@
                                     goal for the month and year</p>
                             </div>
                             <div class="mx-3 pb-4">
-                                <a href="#" class="btn bg-pink-grad text-white  mt-2">
+                                <a id='' class="btn buyProduct bg-pink-grad text-white  mt-2">
                                     Buy Now >>
                                 </a>
                             </div>
                         </div>
                     </div>
                 <!-- Single shoes prdouc -->
-                    <div class="col">
+                    <div  class="col">
                         <div class="card border-0 p-2 shadow h-100">
                             <div class="card-body">
                                 <img src="images/shoes/shoe-2.png" class="card-img-top img-fluid " alt="...">
                                 <h1 class="card-title pt-3 fs-4">
                                     Nike 360
                                 </h1>
-                                <h1 class="fs-5">
+                                <h1 class="fs-5 price">
                                     $330
                                 </h1>
                                 <p class="card-text pt-2">Slate helps you see how 
@@ -245,21 +245,22 @@
                                     goal for the month and year</p>
                             </div>
                             <div class="mx-3 pb-4">
-                                <a href="#" class="btn bg-pink-grad text-white  mt-2">
+                                <a id='' class=" buyProduct
+                                 btn bg-pink-grad text-white  mt-2">
                                     Buy Now >>
                                 </a>
                             </div>
                         </div>
                     </div>
                 <!-- Single shoes prdouc -->
-                    <div class="col">
+                    <div  class="col">
                         <div class="card border-0 p-2 shadow h-100">
                             <div class="card-body">
                                 <img src="images/shoes/shoe-3.png" class="card-img-top img-fluid " alt="...">
                                 <h1 class="card-title pt-3 fs-4">
                                     Red Airmax
                                 </h1>
-                                <h1 class="fs-5">
+                                <h1 class="fs-5 price">
                                     $350
                                 </h1>
                                 <p class="card-text pt-2">Slate helps you see how 
@@ -268,7 +269,7 @@
                                     goal for the month and year</p>
                             </div>
                             <div class="mx-3 pb-4">
-                                <a href="#" class="btn bg-pink-grad text-white  mt-2">
+                                <a id='' class="btn buyProduct bg-pink-grad text-white  mt-2">
                                     Buy Now >>
                                 </a>
                             </div>
@@ -276,7 +277,15 @@
                     </div>
 
                 </div>
-        </div>
+
+                <div id="toast" class="toast align-items-center show position-fixed  top-0 end-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                      <div class="toast-body">
+                        Your product is added into the cart
+                      </div>
+                      <button id='close' type="button" class="btn-close cross me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                  </div>
 
         </section>
 
@@ -296,7 +305,7 @@
                             <h1 class="card-title pt-3 fs-4">
                                 Red Laltu Bag
                             </h1>
-                            <h1 class="fs-5">
+                            <h1 class="fs-5 price">
                                 $120
                             </h1>
                             <p class="card-text pt-2">Slate helps you see how 
@@ -305,7 +314,7 @@
                                 goal for the month and year</p>
                         </div>
                         <div class="mx-3 pb-4">
-                            <a href="#" class="btn bg-pink-grad text-white  mt-2">
+                            <a  class="buyProduct btn bg-pink-grad text-white  mt-2">
                                 Buy Now >>
                             </a>
                         </div>
@@ -319,7 +328,7 @@
                             <h1 class="card-title pt-3 fs-4">
                                 Blue Niltu Bag
                             </h1>
-                            <h1 class="fs-5">
+                            <h1 class="fs-5 price">
                                 $320
                             </h1>
                             <p class="card-text pt-2">Slate helps you see how 
@@ -328,7 +337,7 @@
                                 goal for the month and year</p>
                         </div>
                         <div class="mx-3 pb-4">
-                            <a href="#" class="btn bg-pink-grad text-white  mt-2">
+                            <a  class="buyProduct btn bg-pink-grad text-white  mt-2">
                                 Buy Now >>
                             </a>
                         </div>
@@ -342,7 +351,7 @@
                             <h1 class="card-title pt-3 fs-4">
                                 Black Kaltu Bag
                             </h1>
-                            <h1 class="fs-5">
+                            <h1 class="fs-5 price">
                                 $250
                             </h1>
                             <p class="card-text pt-2">Slate helps you see how 
@@ -351,7 +360,7 @@
                                 goal for the month and year</p>
                         </div>
                         <div class="mx-3 pb-4">
-                            <a href="#" class="btn bg-pink-grad text-white  mt-2">
+                            <a class=" buyProduct btn bg-pink-grad text-white  mt-2">
                                 Buy Now >>
                             </a>
                         </div>
@@ -387,6 +396,17 @@
             </div>
         </section>
 
+        <section id="cart" class="cart">
+            <ul id="cartItems">
+                <li class="cart-item">
+                    <h4>Cart</h4>
+                    <button type="button" class="btn-close close-me cross me-2 m-auto" ></button>
+                </li>
+                
+            </ul>
+
+        </section>
+
         <!-- subscribe section end -->
     </main>
 
@@ -403,6 +423,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
+
+    <script src="./js/script.js"></script>
 
 
 </body>
